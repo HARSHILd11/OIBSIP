@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CONVERSION</title>
+    <style>
+        #maincontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, #4d71ec 50%, #405fd9 50%);
+        }
+
+        #HA {
+            margin: 0px 0px 0px 2px;
+            color: white;
+        }
+
+        #HB {
+            margin: 0px 0px 0px 44px;
+            color: white;
+        }
+
+        #head1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 87px;
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        #btn1a {
+
+            margin-top: 70px;
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+
+
+        #btn1a:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            color: black;
+            background-color: white;
+        }
+
+        #container {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 127px 184px 200px 217px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        #containerbox2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #box2A {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        #cvalue1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #Box2A3 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #bbbba {
+            margin-top: 32px;
+            margin-left: 20px;
+        }
+
+        #B2A32 {
+            margin-top: 32px;
+            margin-left: 20px;
+
+        }
+
+        #containerbox1 {
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .Box2A1 {
+            align-self: center;
+        }
+
+        #btn2A1 {
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        #btn2A1:hover {
+            cursor: pointer;
+        }
+
+        #btn2b1 {
+            border-radius: 10px;
+            padding: 10px;
+            align-self: center;
+        }
+
+        #btn2b1:hover {
+            cursor: pointer;
+        }
+
+        #fvalue1 {
+            display: flex;
+            flex-direction: row;
+        }
+        #c1{
+            margin-top: 32px;
+            margin-left: 20px;
+        }
+        #box2B{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #bbba{
+            margin-top: 32px;
+            margin-left: 20px;
+
+        }
+        #B3B32{
+            display: flex;
+            flex-direction: row;
+        
+        }
+        #B2B33{
+            margin-top: 32px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body onload="displaycontainer()">
+    <div id="maincontainer">
+        <div id="head">
+            <div id="head1">
+
+                <div id="HA">TEMPERATURE</div>
+                <div id="HB">CONVERSION</div>
+            </div>
+        </div>
+        <div id="btn1">
+            <button onclick="functiondis()" id="btn1a">click to open the calculator </button>
+        </div>
+        <div id="container">
+            <div id="containerbox1">
+                <p id="containerhead"><b></b></p>
+            </div>
+            <div id="containerbox2">
+                <div id="box2A">
+                    <div class="Box2A1">
+                        <button onclick="inside()" id="btn2A1"> Celsius to Fahrenheit</button>
+                    </div>
+                    <div id="incon1">
+                        <div id="Box2A2">
+                            <div id="cvalue1">
+                                <div>
+                                    <h1>Enter Celsius Value</h1>
+                                </div>
+                                <div id="bbbba"> <input type="number" id="input1"
+                                        placeholder="Enter value in DEGREE Celsius  ">
+                                </div>
+                            </div>
+                            <div id="cvalue2">
+                                <button onclick="functionc()" id="btn2A2">Convert</button>
+                            </div>
+                        </div>
+                        <div id="Box2A3">
+                            <div id="B2a31">
+                                <h1> Fahrenheit Value is </h1>
+                            </div>
+                            <div id="B2A32">
+
+                                <input type="number" id="fans">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="box2B">
+                    <div class="box2A1">
+                        <button onclick="insideA()" id="btn2b1">Fahrenheit to Celsius</button>
+                    </div>
+                    <div id="inicon2">
+                        <div id="fvalue1">
+                            <div id="2B2">
+                                <h1>Enter Fahrenheit Value</h1>
+                            </div>
+                            <div id="bbba">
+                                <input type="number" id="C212" placeholder="Enter value in DEGREE Fahrenheit  ">
+                            </div>
+                            
+                        </div>
+                        <div id="2B3">
+                            <button onclick="functionc1()" class="btn">Convert</button>
+
+                        </div>
+                        <div id="B3B32">
+                            <div id="B2B32">
+                                <h1>Celsius Value Is</h1>
+                            </div>
+                            <div id="B2B33">
+                                <input type="number" id="cans">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function displaycontainer() {
+            let q;
+            let z = prompt("ENTER YOUR NAME ", "Guest");
+            if (z != null) {
+                q = ("Welcome " + z)
+
+                document.getElementById("containerhead").innerHTML = q;
+            }
+        }
+        function functiondis() {
+            var x = document.getElementById("container");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+        function inside() {
+            var x = document.getElementById("incon1");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+        function functionc() {
+            let x = document.getElementById("input1").value;
+            let ans;
+            if (x != "") {
+                ans = ((x * 9 / 5) + 32);
+            }
+            else {
+                alert("enter a valid value");
+            }
+            document.getElementById("B2A32").innerHTML = ans;
+        }
+ 
+        function functionc1() {
+            let x = document.getElementById("C212").value;
+            let ans;
+            if (x != "") {
+                ans = ( (x - 32) * 5 / 9);
+            }
+            else {
+                alert("enter a valid value");
+            }
+            console.log(ans);
+            document.getElementById("B2B33").innerHTML = ans;
+        }
+        function insideA() {
+            var x = document.getElementById("inicon2");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
