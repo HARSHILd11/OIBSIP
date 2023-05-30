@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            flex-wrap: wrap;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            font-size: x px;
+            margin: 0px 0px 0px 0px;
+            padding: 40px;
+            border: 1px solid black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown1:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 3px;
+            font-size: 10px;
+        }
+
+        .logo {
+            margin: 18px;
+            padding: 0px;
+        }
+
+        .dropdown {
+            margin: 37px;
+            padding: 0px;
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        .dropdown :hover {
+            text-decoration: underline;
+            cursor: pointer;
+            display: block;
+        }
+
+
+        .a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-button {
+            border: none;
+            border-radius: 4px;
+            padding: 8px 24px 16px;
+            margin: -7px 0px 0px 0px;
+            font-size: large;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            font-weight: bold;
+            height: 2rem;
+            width: 10rem;
+            text-align: center;
+
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+        }
+
+
+        .dropdown-content:hover {
+            text-decoration: underline;
+            transform: scale(1.2);
+        }
+
+        .dropdown1 {
+            margin: 37px 10px 0px 325px;
+            padding: 0px;
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        .centre-heading {
+            display: flex;
+            text-align: center;
+            flex-wrap: ;
+            margin: -150px 612px 172px 450px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+            font-size: xx-large;
+            font-size: 80px;
+            flex-direction: column;
+            width: 900px;
+
+        }
+
+        .center-para {
+            font-size: 25px;
+            margin: 0px;
+            padding: 20px;
+
+        }
+
+        button {
+            background-color: rgb(85, 81, 255);
+            margin: 0px 0px 0px 0px;
+            padding: 15px 28px;
+            font-size: large;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+
+        }
+
+        button:hover {
+
+            transform: scale(1.05)
+        }
+
+
+        .explore-ideas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 105px 0px 0px 28px;
+            padding: 0px;
+        }
+
+        .expi-p {
+            margin: -14px 28px 0px 243px;
+            padding: 24px;
+            width: 643px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .expi-h {
+            font-size: 80px;
+            padding: 0px 407px 0px 225px;
+            text-align: center;
+
+        }
+
+        .expi-b {
+            background-color: black;
+            margin: 0px 0px 0px 0px;
+            padding: 15px 28px;
+            font-size: large;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+
+        }
+
+        .center-img {
+            width: 100%;
+        }
+
+        .fourth-div {
+            display: flex;
+            flex-direction: row;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 220px;
+            margin-right: 100px;
+            margin-top: 150px;
+        }
+
+        .four-one {
+            padding: 111px 0px 0px 0px;
+            margin: 100px 0px 0px 0px;
+            justify-content: center;
+            width: 300px;
+            margin-right: 30px;
+            font-size: large;
+            font-weight: bold;
+
+
+        }
+
+        .four-two {
+            height: 40em;
+            width: 50em;
+        }
+
+        .mid-para {
+            background-color: #FEC600;
+            text-align: center;
+            font: 100px;
+            font-weight: 500;
+            height: 300px;
+        }
+
+        .mip {
+            font-size: x-large;
+            font-weight: 500;
+            padding-left: 136px;
+            padding-right: 81px;
+            padding-top: 142px;
+            padding-bottom: 0px;
+        }
+
+        .h1ps {
+            animation-name: example;
+            animation-duration: 20s;
+            animation-iteration-count: 4;
+
+        }
+
+        @keyframes example {
+            0% {
+                color: purple;
+            }
+
+            50% {
+                color: blue;
+            }
+
+            70% {
+                color: green;
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+        video {
+            width: 990px;
+            margin-top: 180px;
+            margin-bottom: -81px;
+        }
+
+    </style>
+</head>
+
+<body onload="document.getElementById('loginform').style.display='none'">
+    <div class="navbar">
+
+
+        <div> <img src="figmalogo .png" alt="" style="height: 4rem;" class="logo"></div>
+
+
+
+        <div class="dropdown1">
+            <span>Products</span>
+            <div class="dropdown-content">
+                <a href="#">Overview</a>
+                <a href="#">Customers</a>
+                <a href="#">Contact sales</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <span>Enterprise</span>
+            <div class="dropdown-content">
+                <a href="#">Overview</a>
+                <a href="#">Customers</a>
+                <a href="#">Contact sales</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Pricing</span>
+
+        </div>
+
+        <div class="dropdown">
+            <span>Community</span>
+            <div class="dropdown-content">
+                <a href="#">Overview</a>
+                <a href="#">Customers</a>
+                <a href="#">Contact sales</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <span>Company</span>
+            <div class="dropdown-content">
+                <a href="#">Blog </a>
+                <a href="#">Careers</a>
+                <a href="#">Our story</a>
+                <a href="#">Helpcenter</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button id="loginbutton" onclick='loginformdisplay()' style="width:auto;">Log In</button>
+
+        </div>
+
+        <div class="dropdown">
+            <button style="background-color: rgb(85, 81, 255);" class="nav-button">Get started</button>
+        </div>
+
+    </div>
+
+
+
+    <div class="centre-heading ">
+        <div><video src="hvi.mp4" autoplay muted></video></div>
+        <!-- <h1 style="font-family: Whyte, sans-serif;"></h1><span class="h1ps">Nothing great is made alone</span></h1> -->
+        <div>
+            <p class="center-para">
+                Figma connects everyone in the design process so teams can deliver better products, faster.</p>
+        </div>
+        <div><button>Get started</button></div>
+    </div>
+
+
+
+    <div>
+        <img src="4th.png" alt="" class="center-img">
+    </div>
+
+
+
+
+    <div class="explore-ideas">
+        <div style="margin: 30px 0px 0px 150px;">
+            <h1 class="expi-h">Explore more ideas. Ship better products.</h1>
+            <p class="expi-p">Whether you’re brainstorming ideas, designing prototypes, or building solutions, Figma
+                helps teams align early and stay in-sync, from initial idea to shipped product.</p>
+
+        </div>
+        <!-- <div><img src="3rd pic.png" alt=""></div> -->
+    </div>
+
+
+    <div class="fourth-div">
+        <div class="four-one">
+            <h1>Design, iterate, repeat</h1>
+            <p>Create high-fidelity designs and interactive prototypes—all while using a centralized design system to
+                keep things consistent.</p>
+            <button style="background-color: black;">Explore features</button>
+        </div>
+        <div><img src="5.png" alt="" class="four-two"></div>
+    </div>
+
+
+    <div class="fourth-div">
+        <div><img src="6.png" alt="" class="four-two"></div>
+        <div class="four-one">
+            <h1>Bring designs to life</h1>
+            <p>Ship a better experience with ongoing conversations and a shared language between design and
+                development..</p>
+            <button style="background-color: black;">Build System</button>
+        </div>
+    </div>
+
+
+    <div class="fourth-div">
+        <div class="four-one">
+            <h1>Build the bridge</h1>
+            <p>Ship a better experience with ongoing conversations and a shared language between design and development.
+            </p>
+
+        </div>
+        <div><img src="7.png" alt="" class="four-two"></div>
+    </div>
+
+    <div class="fourth-div">
+        <div><img src="8.png" alt="" class="four-two"></div>
+        <div class="four-one">
+            <h1>Work in lockstep</h1>
+            <p>Bring everyone into the process with FigJam — an online whiteboard where teams can source ideas, align on
+                plans, and move work forward.</p>
+            <button style="background-color: black;">Meet Figma</button>
+        </div>
+    </div>
+
+
+    <div class="mid-para">
+        <p class="mip"><span>Figma really brings together different parts of the team, and not just designers, but also
+                product managers and engineers. The amount and quality of feedback is ten times better than
+                before.</span></p>
+    </div>
+
+
+
+
+
+    <script>
+        function loginformdisplay() {
+            let x = document.getElementById('loginform');
+            console.log(x);
+            x.style.display = 'block';
+        }
+
+    </script>
+
+</body>
+
+</html>
