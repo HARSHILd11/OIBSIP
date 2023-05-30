@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="portfoliocss.css">
+
+</head>
+
+<body onload="document.getElementById('id01').style.display='block'">
+
+
+    <div class="header">
+        <h1>
+            MY PORTFOLIO
+
+        </h1>
+        <ul>
+            <li>HOME </li>
+            <li>PROJECTS</li>
+            <li>BLOG</li>
+            <li>CONTACT US </li>
+            <li class="login" style="margin: 0px 15px 0px 0px;">SIGN UP </li>
+           <li onclick="document.getElementById('id01').style.display='block'" style="margin-left: 900px;">Login</li> 
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="my-work">
+
+    </div>
+    <h1 class="h1m">MY WORK</h1>
+    <div class="container-2 ">
+
+
+
+        <div class="box1" style="margin: 30px 0px 0px 110px;">
+            <div class="head">
+                <h2> VIDEO EDITING </h2>
+            </div>
+            <div class="mwp">
+                <p style="font-size: 25px;">
+                    I showcase my expertise in crafting visually appealing videos. Using animations and
+                    illustrations, I create captivating content tailored to engage the target audience effectively. My
+                    attention to detail and commitment to quality ensure impactful videos that leave a lasting
+                    impression.
+                </p>
+            </div>
+            <div class="myb">
+                <a href="#"> <button>MY PROJECTS</button></a>
+
+            </div>
+
+        </div>
+        <div class="box1">
+
+            <div class="head">
+                <h2>GRAPHIC DESIGN</h2>
+            </div>
+
+            <div class="mwp">
+                <p style="font-size: 25px;">
+                    I specialize in crafting unique logos, captivating print materials, and eye-catching packaging that
+                    elevate your brand's identity. With compelling infographics and engaging motion graphics, I ensure
+                    effective communication and captivate your audience.
+                </p>
+            </div>
+
+            <div class="myb">
+                <a href="#"><button>MY PROJECTS</button></a>
+
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="head">
+                <h2>WEB DEVLOPMENT </h2>
+            </div>
+            <div class="mwp">
+                <p style="font-size: 24px;">I create stunning websites that showcase your brand's uniqueness and deliver
+                    an exceptional user experience. With expertise in front-end and back-end development, I bring your
+                    online vision to life. Trust me to build a website that captivates visitors and drives business
+                    growth.
+            </div>
+            <div class="myb">
+                <a href="sanam.html" target="_blank"><button>MY PROJECTS</button></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="box" id="box1">
+            <h1 class="box1h" style="text-align: center;">ABOUT ME </h1>
+            <p class="p1" style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati quos vitae quasi vero
+                dicta iusto cumque, soluta at dolorem voluptatibus laudantium nulla temporibus reiciendis nisi eum
+                debitis hic tenetur deserunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui facilis
+                natus amet? Fuga temporibus commodi, doloribus illum velit, cupiditate non aut repellat odit ipsam ex.
+                Nihil nesciunt inventore officia sunt.</p>
+            <button style="margin-left:280px ;">DOWNLOAD CV</button>
+        </div>
+        <div class="box12">
+            <img src="" alt="this is  profile picture " class="myimg">
+        </div>
+    </div>
+
+    <div class="about">
+        <div>
+            <h1>CONNECT WITH ME!</h1>
+        </div>
+        <div>
+            <p>Stay updated with me for exclusive content
+                follow me on my social media channels. You can also sign up to get the
+                latest updates delivered to your inbox..</p>
+        </div>
+        <div>
+            <a href="#" target="_blank" class="aicon"><img src="insta.png" alt="" class="imgicon"></a>
+            <a href="#" target="_blank" class="aicon"><img src="linkdin.png" alt="" class="imgicon"></a>
+        </div>
+        <div style="font-size: small; margin:30px;">© 2023 Sanam Puri. All rights reserved.</div>
+    </div>
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          
+      
+          <div class="containerlogin">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="containerlogin" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <script>
+
+        var modal = document.getElementById('id01');
+        
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+
+
+
+
+</body>
+
+</html>
